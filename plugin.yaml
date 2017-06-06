@@ -1,0 +1,17 @@
+plugin:
+    name: 'nambit.staff::lang.plugin.name'
+    description: 'nambit.staff::lang.plugin.description'
+    author: Nambit
+    icon: oc-icon-users
+    homepage: ''
+permissions:
+    nambit.staff.manage:
+        tab: 'nambit.staff::lang.plugin.name'
+        label: 'nambit.staff::lang.permissions.manage'
+navigation:
+    nambit-staff:
+        label: 'nambit.staff::lang.menu.main'
+        url: nambit/staff/entries
+        icon: icon-users
+        permissions:
+            - nambit.staff.manage

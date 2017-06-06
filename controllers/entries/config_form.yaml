@@ -1,0 +1,10 @@
+name: Entries
+form: $/nambit/staff/models/entry/fields.yaml
+modelClass: Nambit\Staff\Models\Entry
+defaultRedirect: nambit/staff/entries
+create:
+    redirect: 'nambit/staff/entries/update/:id'
+    redirectClose: nambit/staff/entries
+update:
+    redirect: nambit/staff/entries
+    redirectClose: nambit/staff/entries

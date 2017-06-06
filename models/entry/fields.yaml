@@ -1,0 +1,35 @@
+fields:
+    name:
+        label: 'nambit.staff::lang.fields.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+tabs:
+    fields:
+        entries:
+            label: 'nambit.staff::lang.tabs.entries'
+            prompt: 'Add entry'
+            span: auto
+            type: repeater
+            tab: 'nambit.staff::lang.tabs.entries'
+            form:
+                fields:
+                    name:
+                        label: 'nambit.staff::lang.fields.entry.name'
+                        oc.commentPosition: ''
+                        span: auto
+                        required: 1
+                        type: text
+                    job_title:
+                        label: 'nambit.staff::lang.fields.entry.job_title'
+                        oc.commentPosition: ''
+                        span: auto
+                        required: 0
+                        type: text
+                    picture:
+                        label: 'nambit.staff::lang.fields.entry.picture'
+                        oc.commentPosition: ''
+                        mode: file
+                        span: auto
+                        required: 0
+                        type: mediafinder

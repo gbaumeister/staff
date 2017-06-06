@@ -1,0 +1,15 @@
+{% set entry = __SELF__.entry() %}
+
+<div class="nambit-staff row">
+    {% for entry in entry.entries %}
+        <div class="{{ __SELF__.property('entryCssClass') }}">
+            <div class="nambit-staff-entry">
+                <img src="{{ entry.picture|media|resize(__SELF__.property('imageWidth'), __SELF__.property('imageHeight'), { mode: __SELF__.property('imageMode'), quality: __SELF__.property('imageQuality')}) }}" alt="{{ entry.name }}" class="img-responsive">
+                <h3>{{ entry.name }}</h3>
+                {% if(__SELF__.property('displayJobTitle')) %}
+                    <div class="nambit-staff-job-title">{{ entry.job_title }}</div>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
