@@ -8,7 +8,12 @@ use Model;
 class Entry extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
+    /** @var array Translation support */
+    public $implement = ['@RainLab.Translate.Behaviors.TranslatableModel'];
+
+    public $translatable = ['entries'];
+
     /*
      * Validation
      */
@@ -22,4 +27,6 @@ class Entry extends Model
     
     
     protected $jsonable = ['entries'];
+
+
 }
