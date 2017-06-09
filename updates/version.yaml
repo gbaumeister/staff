@@ -3,3 +3,5 @@
 1.0.2:
     - 'Created table nambit_staff_entries'
     - builder_table_create_nambit_staff_entries.php
+1.0.3:
+    - 'Added translations'
